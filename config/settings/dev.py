@@ -4,7 +4,7 @@ from .base import *
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'testingdb',
+        'NAME': 'practicedb',
         'HOST': 'localhost',
         'USER': config('DBUSER'),
         'PASSWORD': config('DBPASSWD'),
