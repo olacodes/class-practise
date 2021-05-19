@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<div class="register-cont mx-5 container" style="max-width: 500px;">
+  <h1 class="text-info text-center mb-4">Register</h1>
+  {% csrf_token %}
+  <form method="POST">
+    {{ form|crispy }}
+  </form>
+  <input type="submit" value="Register" class="btn btn-info">
+  
+</div>
+{% endblock %}
